@@ -1,6 +1,7 @@
 import sys
 import logging  # <--- Add this!
 # from src.logger import LOG_FILE_PATH # Optional: if you want to link them
+from src.logger import logging
 
 def error_message_detail(error, error_detail: sys):
     _, _, exc_tb = error_detail.exc_info()
