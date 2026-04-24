@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 from src.pipeline.predict_pipeline import CustomData, PredictPipeline
 
-app = Flask(__name__)
+application = Flask(__name__)
 
 # Create the pipeline object once when the app starts.
 # This is much more efficient as it loads the model only one time.
