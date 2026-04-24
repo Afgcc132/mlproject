@@ -1,9 +1,5 @@
 pandas
 numpy
-seaborn
 scikit-learn
-dill
-catboost
-xgboost
-lightgbm
 flask
+dill
