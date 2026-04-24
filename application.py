@@ -7,11 +7,11 @@ application = Flask(__name__)
 # This is much more efficient as it loads the model only one time.
 predict_pipeline = PredictPipeline()
 ##Ruta para la página principal
-@app.route('/')
+@application.route('/')
 def home():
     return render_template('index.html')
 
-@app.route('/predictdata', methods=['POST', 'GET' ])
+@application.route('/predictdata', methods=['POST', 'GET' ])
 def predict_datapoint():
     if request.method == 'GET':
         return render_template('home.html')
